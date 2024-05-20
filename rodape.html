@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imobiliária</title>
+    <style>
+        /* styles.css */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        footer {
+            background-color: #000;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        .footer-container {
+            display: inline-flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .footer-section.about {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer-section.about img {
+            width: 150%;
+            height: auto;
+            margin-bottom: 30px;
+            right: 50%;
+        }
+
+        .footer-section h2 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .footer-section p, .footer-section ul, .footer-section li {
+            font-size: 0.9em;
+            margin: 5px 0;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding: 10px 0;
+            border-top: 1px solid #444;
+            font-size: 0.8em;
+        }
+
+        @media (max-width: 768px) {
+            .footer-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <!-- Conteúdo do site aqui -->
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section about">
+                <img src="Talk_to_us-removebg-preview.png" alt="Sobre nós" >
+                <h2>Sobre Nós</h2>
+                <p>Somos uma imobiliária comprometida em ajudar você a encontrar o imóvel ideal, nós intermediamos o seu sonho a realidade.</p>
+                <h2>Links Rápidos</h2>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Imóveis</a></li>
+                    <li><a href="#">Contatos</a></li>
+                </ul>
+                <h2>Contato</h2>
+                <ul>
+                    <li><span>Endereço:</span> Rua, Cidade, Estado</li>
+                    <li><span>Telefone:</span> (83) 1234-5678</li>
+                    <li><span>Email:</span> contato@imobiliaria.com.br</li>
+                </ul>
+                <h2>Siga-nos</h2>
+                <ul class="social-icons">
+                    <li><a href="#"><img src="facebook-icon.png" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="twitter-icon.png" alt="Twitter"></a></li>
+                    <li><a href="#"><img src="instagram-icon.png" alt="Instagram"></a></li>
+                    <li><a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a></li>
+                </ul>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Imobiliária. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
