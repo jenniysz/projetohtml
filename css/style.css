@@ -54,11 +54,14 @@ header .menu .link:hover {
 header .meio-img {
     max-width: 100%;
     height: auto;
+    display: flexbox;
 }
 
 header .meio-img img {
     max-width: 100%;
     height: auto;
+    object-position: center bottom;
+    
 }
 
 section#imoveisemdestaque {
@@ -123,6 +126,12 @@ section#imoveisemdestaque {
         font-weight: bold;
     }
 
+}
+
+.card img{
+    max-width: 100%;
+    height: auto;
+    display: flexbox;
 }
 
 .mapa {
