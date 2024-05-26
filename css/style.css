@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
 
 
 * {
@@ -63,8 +62,7 @@ header .meio-img img {
 }
 
 section#imoveisemdestaque {
-    .nda {}
-
+    
     .central {
         margin-top: 25px;
         font-size: 35px;
@@ -124,11 +122,11 @@ section#imoveisemdestaque {
         color: black;
         font-weight: bold;
     }
+
 }
 
 .mapa {
-    padding: 35px;
-    margin-bottom: 20px;
+    padding: 30px 0px;
     text-align: center;
 
     p {
@@ -137,15 +135,6 @@ section#imoveisemdestaque {
         
 
     }
-}
-
-.local {
-    margin-top: 30px;
-
-}
-
-.card img{
-    width: 100%; height: auto; display: block;
 }
 .corretores {
     margin-top: 30px;
@@ -195,13 +184,6 @@ section#imoveisemdestaque {
 
 }
 
-.corretores-sect {
-    text-align: center;
-}
+
     
-.institucional {
-    margin: 30px 30px 25px 25px;
-    p {
-        font-family: "Reddit Sans", Arial, Helvetica, sans-serif;
-    }
-}
+
