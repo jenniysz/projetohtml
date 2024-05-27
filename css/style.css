@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
 
 
 * {
@@ -55,16 +54,18 @@ header .menu .link:hover {
 header .meio-img {
     max-width: 100%;
     height: auto;
+    display: flexbox;
 }
 
 header .meio-img img {
     max-width: 100%;
     height: auto;
+    object-position: center bottom;
+    
 }
 
 section#imoveisemdestaque {
-    .nda {}
-
+    
     .central {
         margin-top: 25px;
         font-size: 35px;
@@ -124,11 +125,17 @@ section#imoveisemdestaque {
         color: black;
         font-weight: bold;
     }
+
+}
+
+.card img{
+    max-width: 100%;
+    height: auto;
+    display: flexbox;
 }
 
 .mapa {
-    padding: 35px;
-    margin-bottom: 20px;
+    padding: 30px 0px;
     text-align: center;
 
     p {
@@ -138,70 +145,27 @@ section#imoveisemdestaque {
 
     }
 }
-
-.local {
-    margin-top: 30px;
-
-}
-
-.card img{
-    width: 100%; height: auto; display: block;
-}
 .corretores {
-    margin-top: 30px;
+    text-align: center;
+    width: 17px;
+    margin: 20px 25px;
+    border-radius: 8px;
+    border: 1px solid #03030291;
     display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 12px 20px #03030291;
-    border-radius: 7px;
-    background-image: linear-gradient(to right, #6A8A7D,  #425b58ce, #2a3c40e0);
-    overflow: hidden;
-    width: 210px;
-    height: 220px;
-
+    padding: 95px 100px;
 }
 
 .imagem {
-    object-fit: cover;
     width: 100%;
     height: 100%;
-    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out ;
+    transition: transform 0.3 ease-in-out, opacity 0.3 ease-in-out ;
 }
 
 .corretores:hover .imagem {
-    transform: translateY(-200px);
+    transform: translateY(-100px);
     opacity: 0;
 }
 
-.conteudo {
-    position: absolute;
-    opacity: 0;
+
     
-     p, li, img {
-        font-size: 20px;
-        margin: 4px 3px;
-        
 
-    }
-
-
-}
-
-.corretores:hover .conteudo {
-    list-style: none;
-    opacity: 1;
-    transition: transform 1.5s ease-in-out, opacity 1.5s ease-in-out ;
-
-
-}
-
-.corretores-sect {
-    text-align: center;
-}
-    
-.institucional {
-    margin: 30px 30px 25px 25px;
-    p {
-        font-family: "Reddit Sans", Arial, Helvetica, sans-serif;
-    }
-}

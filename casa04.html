@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descrição da Casa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #08f6e2 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header ul li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        .main {
+            padding: 20px;
+            background: #fff;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .main img {
+            width: 100%;
+            height: auto;
+        }
+        .main h2 {
+            color: #333;
+        }
+        .main p {
+            color: #666;
+        }
+        .imgtamanho{
+            position: relative;
+            width: 100%;
+            display: flex;
+            height: 250px;
+            -webkit-box-align: stretch;
+            align-items: stretch;
+            justify-content: stretch;
+            cursor: pointer;
+        }
+        .posiçao{
+            margin: 15px 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Descrição da Casa</h1>
+            <ul>
+                <li><a href="#descricao">Descrição</a></li>
+                <li><a href="#fotos">Fotos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div>
+        <section id="descricao" class="main">
+            <h2>Descrição da Propriedade</h2>
+            <p>Apartamento Projetado Com Sala de Estar, Cozinha 2 Quartos e Banheiro, 100 m² para vender por R$ 2.200.000,00</p>
+        </section>
+
+        <section id="fotos" class="main">
+            <h2>Fotos do Apartamento</h2>
+            <div class="imgtamanho">
+                <div class="posiçao">
+                    <img src="img/casas/CASA 4/3 imagem casa 4.jpg" alt="Vista frontal da casa">
+                </div>
+
+                <div class="posiçao">
+                    <img src="img/casas/CASA 4/2 imagem casa 4.jpg" alt="Sala de estar">
+                </div>
+
+                <div class="posiçao">
+                    <img src="img/casas/CASA 4/7 imagem casa 4.jpg" alt="Cozinha">
+                </div>  
+
+                <div class="posiçao">  
+                    <img src="img/casas/CASA 4/9 imagem casa 4.jpg" alt="Quintal">
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contato" class="main">
+            <h2>Contato</h2>
+            <p>Para mais informações, entre em contato com:</p>
+            <p>Matheus Henrique</p>
+            <p>Telefone: (83) 98720-0730</p>
+            <p>Email: matheus.henrique@imobiliariadevs.com.br</p>
+        </section>
+    </div>
+</body>
+</html>
