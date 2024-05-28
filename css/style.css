@@ -25,6 +25,7 @@ header .menu ul, a {
     color: unset;
     font-weight: bolder;
     font-size: 20px;
+    
 }
 
 /* header .menu a {
@@ -42,6 +43,7 @@ header .menu .link {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: transform 0.3s ease-in-out;
     
 }
 
@@ -49,6 +51,8 @@ header .menu .link:hover {
     color: #ffffff;
     background-color: black;
     opacity: 1;
+    border-radius: 8px;
+    transform: scale(1.15);
 }
 
 
@@ -85,11 +89,18 @@ section#imoveisemdestaque {
         box-shadow: 0 4px 12px #03030291;
         max-width: 350px;
         text-align: center;
-        /* background-color: #3f250344; */
         background-image: linear-gradient(to right, #0a0c0f9a,  #3f250344, #6D6D69);
         overflow: hidden;
         padding: 25px 0px;
-        
+        width: 350px;
+        height: 495px;
+        transition: transform 0.3s ease-in-out;
+
+    }
+
+    .anuncio:hover{
+        transform: scale(1.1);
+        box-shadow: 16px 18px 25px #030303;
 
     }
 
@@ -108,20 +119,20 @@ section#imoveisemdestaque {
 
     .nome-imovel {
     font-size: 1.6em;
-    color: aquamarine;
+    color: rgba(0, 0, 0, 0.705);
     margin: 0 0 8px;
     }
 
     .descricao {
         font-size: 1em;
-        color: beige;
+        color: rgb(27, 26, 26);
         margin: 0 0 16px;
 
     }
 
     .preco {
         font-size: 1.2em;
-        color: black;
+        color: rgba(15, 15, 15, 0.719);
         font-weight: bold;
     }
 }
