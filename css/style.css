@@ -216,3 +216,17 @@ section#imoveisemdestaque {
         font-family: "Reddit Sans", Arial, Helvetica, sans-serif;
     }
 }
+
+.imgrodape{
+    padding: 20px 60px;
+    display: flex;
+    background-image: linear-gradient(to right, #020202,  #242323, #595959);
+
+}
+.rodape{
+    
+    padding-right: 270px;
+    display: flex;
+
+
+}
