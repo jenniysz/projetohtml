@@ -1,39 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 
-
-* {
-    padding: 0;
-    font-family: 'Tahoma';
-    margin: auto auto;
-    
-}
 body {
-    p, h1, h2{
-    font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
-    text-align: center;
-}
-    
+    margin: auto;
+
+    p,
+    h1,
+    h2 {
+        font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
 
 }
 
-header .menu ul, a {
-    display: flex;
+.menu ul,
+a {
     list-style: none;
     padding: 3px 0px;
     text-decoration: none;
     color: unset;
     font-weight: bolder;
     font-size: 20px;
+ Matheus
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+
     
 }
+ main
 
-/* header .menu a {
-    text-decoration: none;
-    color: unset;
-    font-weight: bolder;
-    font-size: 20px;
-} */
+}
 
 header .menu .link {
     width: auto;
@@ -44,7 +41,11 @@ header .menu .link {
     align-items: center;
     justify-content: center;
     transition: transform 0.3s ease-in-out;
+ Matheus
+
+
     
+ main
 }
 
 header .menu .link:hover {
@@ -66,22 +67,23 @@ header .meio-img img {
     height: auto;
 }
 
+.central {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 35px;
+
+}
+
 section#imoveisemdestaque {
-    .nda {}
+    padding: 30px 50px 30px 50px;
+}
 
-    .central {
-        margin-top: 25px;
-        font-size: 35px;
-
-    }
-
-    .imovéisdestaque{
-        display: flex;
-        padding: 50px 30px;
-        
-    
-
-    }
+ Matheus
+section#imoveisemdestaque .imovéisdestaque {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 60px;
+}
 
     .anuncio{
         border: 0px solid #f6f7f8;
@@ -101,71 +103,115 @@ section#imoveisemdestaque {
     .anuncio:hover{
         transform: scale(1.1);
         box-shadow: 16px 18px 25px #030303;
+ main
 
-    }
+section#imoveisemdestaque .anuncio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 0px solid #f6f7f8;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px #03030291;
+    text-align: center;
+    background-image: linear-gradient(to right, #0a0c0f9a, #3f250344, #6D6D69);
+    overflow: hidden;
+    padding: 25px 0px;
+    transition: transform 0.3s ease-in-out;
+}
 
+section#imoveisemdestaque .anuncio:hover {
+    transform: scale(1.1);
+    box-shadow: 16px 18px 25px #030303;
+}
 
-    .imagem-imovel{
-    width: 350px;
+section#imoveisemdestaque .imagem-imovel {
+    width: 100%;
     height: 250px;
     object-fit: cover;
+}
 
-    }
-
-    .info {
+section#imoveisemdestaque .info {
     padding: 16px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
-    }
-
-    .nome-imovel {
+section#imoveisemdestaque .nome-imovel {
     font-size: 1.6em;
     color: rgba(0, 0, 0, 0.705);
     margin: 0 0 8px;
-    }
+}
+
+ Matheus
+section#imoveisemdestaque .descricao {
+    font-size: 1em;
+    color: rgb(27, 26, 26);
+    margin: 0 0 16px;
+}
 
     .descricao {
         font-size: 1em;
         color: rgb(27, 26, 26);
         margin: 0 0 16px;
+ main
 
-    }
+section#imoveisemdestaque .preco {
+    font-size: 1.2em;
+    color: rgba(15, 15, 15, 0.719);
+    font-weight: bold;
+}
+
+ Matheus
+section#imoveisemdestaque .anuncio {
+    min-height: 495px;
 
     .preco {
         font-size: 1.2em;
         color: rgba(15, 15, 15, 0.719);
         font-weight: bold;
     }
+main
 }
 
-.mapa {
+#mapa {
     padding: 35px;
     margin-bottom: 20px;
     text-align: center;
-
-    p {
-        font-size: 1.4em;
-        margin-top: 30px;
-        
-
-    }
 }
 
-.local {
-    margin-top: 30px;
 
+#mapa .mapa {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
 }
 
-.card img{
-    width: 100%; height: auto; display: block;
+#mapa iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
 }
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 .corretores {
-    margin-top: 30px;
+    margin: 0 15px 30px 15px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 12px 20px #03030291;
+    box-shadow: 0 10px 15px #80808069;
     border-radius: 7px;
-    background-image: linear-gradient(to right, #6A8A7D,  #425b58ce, #2a3c40e0);
+    background-image: linear-gradient(to right, #6A8A7D, #425b58ce, #2a3c40e0);
     overflow: hidden;
     width: 210px;
     height: 220px;
@@ -176,7 +222,7 @@ section#imoveisemdestaque {
     object-fit: cover;
     width: 100%;
     height: 100%;
-    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out ;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 
 .corretores:hover .imagem {
@@ -187,12 +233,23 @@ section#imoveisemdestaque {
 .conteudo {
     position: absolute;
     opacity: 0;
-    
-     p, li, img {
+
+    p,
+    li,
+    img {
         font-size: 20px;
         margin: 4px 3px;
-        
 
+
+    }
+
+    a {
+        justify-content: left;
+    }
+
+    img {
+        width: 20px;
+        height: 20px;
     }
 
 
@@ -201,18 +258,112 @@ section#imoveisemdestaque {
 .corretores:hover .conteudo {
     list-style: none;
     opacity: 1;
-    transition: transform 1.5s ease-in-out, opacity 1.5s ease-in-out ;
+    transition: transform 1.5s ease-in-out, opacity 1.5s ease-in-out;
 
 
 }
 
 .corretores-sect {
     text-align: center;
-}
-    
-.institucional {
-    margin: 30px 30px 25px 25px;
+    background-image: linear-gradient(to right, #343434f2, #000000);
+    color: white;
+    padding: 30px;
+
     p {
-        font-family: "Reddit Sans", Arial, Helvetica, sans-serif;
+        font-size: 18px;
     }
+
+}
+
+.institucional {
+    margin: 35px;
+
+    h1 {
+        margin-bottom: 20px;
+
+    }
+
+    p {
+        font-family: "Sora", Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        padding: 8px;
+    }
+}
+
+.rodape {
+    background-image: linear-gradient(to right, #343434f2, #000000);
+    color: #fff;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.imagem-rodape {
+    margin-left: 15px;
+    margin-top: 50px;
+    padding: 0px 15px;
+}
+
+.imagem-rodape img {
+    width: 200px;
+}
+
+.sobre-nos,
+.links-rapidos,
+.contato,
+.siga-nos {
+    flex: 1;
+    margin: 15px;
+    align-items: center;
+}
+
+footer h2 {
+    font-size: 18px;
+}
+
+footer p {
+    font-size: 15px;
+    font-family: "Sora", Arial, Helvetica, sans-serif;
+}
+
+footer ul {
+    list-style: none;
+    padding-left: 50px;
+
+}
+
+footer ul li {
+    margin-bottom: 5px;
+    font-family: "Sora", Arial, Helvetica, sans-serif;
+}
+
+footer a {
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+    justify-content: flex-start;
+    padding-left: 20px;
+    font-family: "Sora", Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.siga-nos img {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.siga-nos li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    font-family: "Sora", Arial, Helvetica, sans-serif;
 }
