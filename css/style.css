@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 
 
 * {
@@ -25,6 +25,7 @@ header .menu ul, a {
     color: unset;
     font-weight: bolder;
     font-size: 20px;
+    
 }
 
 /* header .menu a {
@@ -42,6 +43,7 @@ header .menu .link {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: transform 0.3s ease-in-out;
     
 }
 
@@ -49,6 +51,8 @@ header .menu .link:hover {
     color: #ffffff;
     background-color: black;
     opacity: 1;
+    border-radius: 8px;
+    transform: scale(1.15);
 }
 
 
@@ -62,14 +66,15 @@ header .meio-img img {
     height: auto;
 }
 
-section#imoveisemdestaque {
-    .nda {}
-
-    .central {
+.central {
         margin-top: 25px;
         font-size: 35px;
 
     }
+section#imoveisemdestaque {
+    .nda {}
+
+    
 
     .imovéisdestaque{
         display: flex;
@@ -85,11 +90,18 @@ section#imoveisemdestaque {
         box-shadow: 0 4px 12px #03030291;
         max-width: 350px;
         text-align: center;
-        /* background-color: #3f250344; */
         background-image: linear-gradient(to right, #0a0c0f9a,  #3f250344, #6D6D69);
         overflow: hidden;
         padding: 25px 0px;
-        
+        width: 350px;
+        height: 495px;
+        transition: transform 0.3s ease-in-out;
+
+    }
+
+    .anuncio:hover{
+        transform: scale(1.1);
+        box-shadow: 16px 18px 25px #030303;
 
     }
 
@@ -108,20 +120,20 @@ section#imoveisemdestaque {
 
     .nome-imovel {
     font-size: 1.6em;
-    color: aquamarine;
+    color: rgba(0, 0, 0, 0.705);
     margin: 0 0 8px;
     }
 
     .descricao {
         font-size: 1em;
-        color: beige;
+        color: rgb(27, 26, 26);
         margin: 0 0 16px;
 
     }
 
     .preco {
         font-size: 1.2em;
-        color: black;
+        color: rgba(15, 15, 15, 0.719);
         font-weight: bold;
     }
 }
@@ -152,7 +164,7 @@ section#imoveisemdestaque {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 12px 20px #03030291;
+    box-shadow: 0 10px 15px #80808069;
     border-radius: 7px;
     background-image: linear-gradient(to right, #6A8A7D,  #425b58ce, #2a3c40e0);
     overflow: hidden;
@@ -183,6 +195,10 @@ section#imoveisemdestaque {
         
 
     }
+    img {
+        width: 20px;
+        height: 20px;
+    }
 
 
 }
@@ -197,11 +213,55 @@ section#imoveisemdestaque {
 
 .corretores-sect {
     text-align: center;
+    background-color: #0e0e0e;
+    color: white;
+    padding: 25px;
+
+    p {
+        font-size: 18px;
+    }
+
 }
     
 .institucional {
-    margin: 30px 30px 25px 25px;
-    p {
-        font-family: "Reddit Sans", Arial, Helvetica, sans-serif;
+    margin: 60px 35px 35px 35px;
+
+    h1 {
+        margin-bottom: 20px;
+        font-size: 25px;
     }
+    p {
+        font-family: "Sora", Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        padding: 8px;
+    }
+}
+
+.imgrodape {
+    padding: 20px 60px;
+    display: flex;
+    background-image: linear-gradient(to right, #020202, #242323, #595959);
+}
+
+.rodape {
+    text-decoration: none;
+    margin-left: 100px;
+    padding-right: 270px;
+    display: flex;
+}
+
+/* Estilo para cada bloco dentro do rodapé */
+.rodape > div {
+    margin-right: 30px; /* Adicione margem entre os elementos */
+}
+
+/* Ajuste para que os ícones de mídia social não quebrem para a próxima linha */
+.rodape ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Ajuste para os ícones das mídias sociais ficarem lado a lado */
+.rodape ul li {
+    margin-right: 15px; /* Adicione margem entre os ícones */
 }
