@@ -21,14 +21,9 @@ a {
     color: unset;
     font-weight: bolder;
     font-size: 20px;
- Matheus
     display: flex;
     justify-content: space-around;
     margin: auto;
-
-    
-}
- main
 
 }
 
@@ -41,11 +36,7 @@ header .menu .link {
     align-items: center;
     justify-content: center;
     transition: transform 0.3s ease-in-out;
- Matheus
 
-
-    
- main
 }
 
 header .menu .link:hover {
@@ -78,32 +69,11 @@ section#imoveisemdestaque {
     padding: 30px 50px 30px 50px;
 }
 
- Matheus
 section#imoveisemdestaque .imovéisdestaque {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 60px;
 }
-
-    .anuncio{
-        border: 0px solid #f6f7f8;
-        border-radius: 8px;
-        box-shadow: 0 4px 12px #03030291;
-        max-width: 350px;
-        text-align: center;
-        background-image: linear-gradient(to right, #0a0c0f9a,  #3f250344, #6D6D69);
-        overflow: hidden;
-        padding: 25px 0px;
-        width: 350px;
-        height: 495px;
-        transition: transform 0.3s ease-in-out;
-
-    }
-
-    .anuncio:hover{
-        transform: scale(1.1);
-        box-shadow: 16px 18px 25px #030303;
- main
 
 section#imoveisemdestaque .anuncio {
     display: flex;
@@ -145,18 +115,11 @@ section#imoveisemdestaque .nome-imovel {
     margin: 0 0 8px;
 }
 
- Matheus
 section#imoveisemdestaque .descricao {
     font-size: 1em;
     color: rgb(27, 26, 26);
     margin: 0 0 16px;
 }
-
-    .descricao {
-        font-size: 1em;
-        color: rgb(27, 26, 26);
-        margin: 0 0 16px;
- main
 
 section#imoveisemdestaque .preco {
     font-size: 1.2em;
@@ -164,16 +127,8 @@ section#imoveisemdestaque .preco {
     font-weight: bold;
 }
 
- Matheus
 section#imoveisemdestaque .anuncio {
     min-height: 495px;
-
-    .preco {
-        font-size: 1.2em;
-        color: rgba(15, 15, 15, 0.719);
-        font-weight: bold;
-    }
-main
 }
 
 #mapa {
